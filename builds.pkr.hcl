@@ -41,6 +41,7 @@ build {
       "sudo rm -f /etc/udev/rules.d/* /var/lib/NetworkManager/* /etc/ssh/ssh_host_* /etc/sysconfig/network-scripts/ifcfg-e*",
       "sudo truncate -s 0 /etc/machine-id ~/.ssh/authorized_keys /root/.ssh/authorized_keys",
       "sudo find /var/log -type f -exec truncate -s 0 {} \\;",
+      "sync"
     ]
   }
 }
