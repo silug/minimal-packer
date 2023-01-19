@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[ -f ssh_key ] || ssh-keygen -N '' -f ssh_key
+
+packer build *.pkr.hcl
